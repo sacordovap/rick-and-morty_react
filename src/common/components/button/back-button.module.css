@@ -1,0 +1,21 @@
+.backButton {
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: var(--sky-800);
+  border: 1px solid var(--sky-600);
+  color: var(--sky-100);
+  padding: 8px 16px; 
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backButton:hover {
+  color: var(--sky-100);
+  font-weight: 600;
+}

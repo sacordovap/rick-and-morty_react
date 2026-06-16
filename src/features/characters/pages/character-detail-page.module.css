@@ -1,0 +1,114 @@
+.wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 8px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: var(--sky-900);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--sky-800);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  object-fit: cover;
+}
+.detailsGrid {
+  font-size: medium;
+}
+
+@media (max-width: 710px) {
+  .image {
+    max-width: 100%;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
+
+.info {
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  /* gap: 10px; */
+  /* margin-bottom: 20px; */
+}
+
+.episodeList {
+  margin-top: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.episodeList ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.episodeList::-webkit-scrollbar {
+  width: 15px;
+}
+
+.episodeList::-webkit-scrollbar-track {
+  background: var(--sky-950);
+  border-radius: 10px;
+}
+
+.episodeList::-webkit-scrollbar-thumb {
+  background: var(--sky-700);
+  border-radius: 10px;
+  border: 2px solid var(--sky-950);
+}
+
+.episodeList::-webkit-scrollbar-thumb:hover {
+  background: var(--sky-600);
+}
+
+.badge {
+  background: var(--sky-800);
+  border: 1px solid var(--sky-600);
+  color: var(--sky-100);
+  padding: 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.badge:hover {
+  background: var(--sky-600);
+}
+
+.favContainer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 5px;
+}

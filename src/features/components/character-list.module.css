@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 210px);
+  justify-content: center;
+  gap: 20px;
+  padding: 5px;
+}
+
+.noResults, .loading {
+  text-align: center;
+  padding: 60px;
+  color: var(--sky-400);
+  font-size: 18px;
+  background: var(--sky-800);
+  border-radius: 16px;
+  margin-top: 20px;
+}

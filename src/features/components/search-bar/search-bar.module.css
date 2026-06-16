@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.input {
+  width: 100%;
+  max-width: 600px; 
+  padding: 12px 20px;
+  border-radius: 12px; 
+  border: 1px solid var(--sky-800);
+  background-color: var(--sky-900);
+  color: var(--sky-50);
+  font-size: 16px;
+  transition: all 0.3s ease; 
+  outline: none;
+}
+
+
+.input:hover {
+  border-color: var(--sky-100);
+}
+
+
+.input:focus {
+  border-color: var(--sky-100);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2); 
+  background-color: var(--sky-950);
+}
+
+.input::placeholder {
+  color: var(--sky-200);
+}

@@ -1,0 +1,22 @@
+.filterBar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+ 
+.filterBar select {
+  background-color: var(--sky-800);
+  color: var(--sky-50);
+  border: 1px solid var(--sky-700);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.filterBar select:hover {
+  border-color: var(--sky-500);
+}

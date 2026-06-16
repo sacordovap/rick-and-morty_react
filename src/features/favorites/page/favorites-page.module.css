@@ -1,0 +1,26 @@
+.container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  color: var(--sky-50);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 210px);
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: var(--sky-300);
+  margin-top: 50px;
+  font-size: 18px;
+}
